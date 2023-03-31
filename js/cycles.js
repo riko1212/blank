@@ -145,21 +145,21 @@
 // }
 
 // 2 Варіант
-// for (let i = 1; i <= 100; i += 1) {
-//   let str = '';
+for (let i = 1; i <= 100; i += 1) {
+  let str = '';
 
-//   if (i % 3 === 0) {
-//     // str = str + 'Fizz';
-//     str += 'Fizz';
-//   }
+  if (i % 3 === 0) {
+    // str = str + 'Fizz';
+    str += 'Fizz';
+  }
 
-//   if (i % 5 === 0) {
-//     // str = str + 'Fizz';
-//     str += 'Buzz';
-//   }
+  if (i % 5 === 0) {
+    // str = str + 'Fizz';
+    str += 'Buzz';
+  }
 
-//   console.log(str || i);
-// }
+  console.log(str || i);
+}
 
 /*
  ? Виведіть методом console.log() зірочки від 1 до 7 штук у вигляді трикутника таким чином:
@@ -171,6 +171,8 @@
  ? ******
  ? *******
  */
+
+//  let star = ''
 
 // for (let i = 0, star = ''; i < 7; i += 1) {
 //   star += '*';
