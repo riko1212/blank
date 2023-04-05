@@ -86,21 +86,21 @@ const filmoteka = [
 
 //? Напишіть функцію findFilmByName(films, filmTitle), яка шукає фільм за назвою.
 // const findFilmByName = function (films, filmTitle) {
-//   // 1 Варіант
-//   // let findedFilm = null;
-//   // for (const film of films) {
-//   //   if (film.title.toLowerCase() === filmTitle.toLowerCase()) {
-//   //     findedFilm = film;
-//   //     break;
-//   //   }
-//   // }
-//   // return findedFilm;
-//   // 2 Варіант
-//   // for (const film of films) {
-//   //   if (film.title.toLowerCase() === filmTitle.toLowerCase()) {
-//   //     return film;
-//   //   }
-//   // }
+// 1 Варіант
+// let findedFilm = null;
+// for (const film of films) {
+//   if (film.title.toLowerCase() === filmTitle.toLowerCase()) {
+//     findedFilm = film;
+//     break;
+//   }
+// }
+// return findedFilm;
+// 2 Варіант
+// for (const film of films) {
+//   if (film.title.toLowerCase() === filmTitle.toLowerCase()) {
+//     return film;
+//   }
+// }
 // };
 
 // console.log(findFilmByName(filmoteka, 'Venom'));

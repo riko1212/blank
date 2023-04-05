@@ -4,8 +4,8 @@
  */
 
 // const user = {
-//   firstName: 'Oleksii',
-//   lastName: 'Repin',
+//   firstName: 'Andrii',
+//   lastName: 'Danylko',
 //   age: 40,
 //   login: 'test@gmail.com',
 // };
