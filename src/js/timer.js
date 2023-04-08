@@ -1,5 +1,5 @@
 const timer = {
-  timerDeadline: new Date(2022, 8, 9),
+  timerDeadline: new Date(2023, 8, 9),
   intervalId: null,
   rootSelector: document.querySelector('.js-timer-items'),
 
@@ -15,28 +15,23 @@ const timer = {
 
       const { days, hours, minutes, seconds } = this.getTimeComponents(diff);
 
-      this.rootSelector.querySelector('.js-timer__days').textContent = this.pad(days);
-      this.rootSelector.querySelector('.js-timer__hours').textContent = this.pad(hours);
-      this.rootSelector.querySelector('.js-timer__minutes').textContent = this.pad(minutes);
-      this.rootSelector.querySelector('.js-timer__seconds').textContent = this.pad(seconds);
+      this.rootSelector.querySelector('.js-timer__days').textContent =
+        this.pad(days);
+      this.rootSelector.querySelector('.js-timer__hours').textContent =
+        this.pad(hours);
+      this.rootSelector.querySelector('.js-timer__minutes').textContent =
+        this.pad(minutes);
+      this.rootSelector.querySelector('.js-timer__seconds').textContent =
+        this.pad(seconds);
 
-      this.rootSelector.querySelector('.js-timer__days').dataset.title = this.declensionNum(days, [
-        'день',
-        'дні',
-        'днів',
-      ]);
-      this.rootSelector.querySelector('.js-timer__hours').dataset.title = this.declensionNum(
-        hours,
-        ['година', 'години', 'годин']
-      );
-      this.rootSelector.querySelector('.js-timer__minutes').dataset.title = this.declensionNum(
-        minutes,
-        ['хвилина', 'хвилини', 'хвилин']
-      );
-      this.rootSelector.querySelector('.js-timer__seconds').dataset.title = this.declensionNum(
-        seconds,
-        ['секунда', 'секунди', 'секунд']
-      );
+      this.rootSelector.querySelector('.js-timer__days').dataset.title =
+        this.declensionNum(days, ['день', 'дні', 'днів']);
+      this.rootSelector.querySelector('.js-timer__hours').dataset.title =
+        this.declensionNum(hours, ['година', 'години', 'годин']);
+      this.rootSelector.querySelector('.js-timer__minutes').dataset.title =
+        this.declensionNum(minutes, ['хвилина', 'хвилини', 'хвилин']);
+      this.rootSelector.querySelector('.js-timer__seconds').dataset.title =
+        this.declensionNum(seconds, ['секунда', 'секунди', 'секунд']);
     }, 1000);
   },
 
@@ -67,7 +62,9 @@ const timer = {
     // words = ['секунда', 'секунди', 'секунд']
 
     return words[
-      num % 100 > 4 && num % 100 < 20 ? 2 : [2, 0, 1, 1, 1, 2][num % 10 < 5 ? num % 10 : 5]
+      num % 100 > 4 && num % 100 < 20
+        ? 2
+        : [2, 0, 1, 1, 1, 2][num % 10 < 5 ? num % 10 : 5]
     ];
   },
 };
