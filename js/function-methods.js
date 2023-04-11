@@ -24,6 +24,9 @@
 //   age: 30,
 // };
 
+// user.showFullName = showFullName;
+// user.showFullName()
+
 // showFullName.call(user, 'Hello', 10);
 // showFullName.apply(user, ['Hello', 10]);
 
