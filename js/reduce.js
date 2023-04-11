@@ -60,3 +60,12 @@ acc = 15
 // };
 
 // console.log(getTotalAmount(cars));
+
+// function countNestedObjects(obj) {
+//   return Object.values(obj).reduce((acc, val) => {
+//     if (val && typeof val === "object") {
+//       return acc + 1 + countNestedObjects(val);
+//     }
+//     return acc;
+//   }, 0);
+// }

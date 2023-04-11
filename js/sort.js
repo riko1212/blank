@@ -2,6 +2,9 @@
  *  Метод sort()
  */
 
+// const numbers = [3, 7, 2, 8, 1];
+// const newNumbers = numbers.sort();
+
 //? Сортування чисел та рядків за замовчуванням
 // const numbers = [3, 7, 2, 8, 1, 45, 58];
 // const newNumbers = [...numbers].sort();
@@ -15,7 +18,7 @@
 // console.log('strArr: ', strArr);
 // console.log('newStrArr: ', newStrArr);
 
-//? Сортировка чисел и строк по условию
+//? Сортування чисел и рядків за умовою
 // const numbers = [3, 7, 2, 8, 1, 42, 56];
 // const copyNumbers = [...numbers].sort((a, b) => {
 //   return b - a;
