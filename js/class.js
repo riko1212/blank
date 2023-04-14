@@ -31,6 +31,18 @@ class User {
     // return this;
   }
 
+  // PRIVATE
+
+  // changeFirstName(newName) {
+  //   if (this.#private(newName)) {
+  //     this.firstName = newName;
+  //   }
+  // }
+
+  // #private(name) {
+  //   return typeof name === 'string';
+  // }
+
   get login() {
     return this.#userLogin;
   }

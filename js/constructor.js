@@ -23,6 +23,10 @@ const User = function (userInfo) {
   this.login = login;
   this.password = password;
   // return this;
+
+  // this.changeFirstName = function (newFirstName) {
+  //   this.firstName = newFirstName;
+  // };
 };
 
 User.prototype.changeFirstName = function (newFirstName) {

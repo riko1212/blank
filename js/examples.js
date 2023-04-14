@@ -160,52 +160,52 @@
 ?
 ? Додай методи addNote(note), removeNote(text) та updatePriority(text, newPriority).
 */
-// class Notes {
-//   static Priority = {
-//     LOW: 'low',
-//     NORMAL: 'normal',
-//     HIGH: 'high',
-//   };
+class Notes {
+  static Priority = {
+    LOW: 'low',
+    NORMAL: 'normal',
+    HIGH: 'high',
+  };
 
-//   constructor(notesArr) {
-//     this.items = notesArr;
-//   }
+  constructor(notesArr) {
+    this.items = notesArr;
+  }
 
-//   addNote(note) {
-//     this.items.push(note);
-//   }
+  addNote(note) {
+    this.items.push(note);
+  }
 
-//   removeNote(text) {
-//     const idxOfNote = this.items.findIndex(el => el.text === text);
+  removeNote(text) {
+    const idxOfNote = this.items.findIndex((el) => el.text === text);
 
-//     this.items.splice(idxOfNote, 1);
-//   }
+    this.items.splice(idxOfNote, 1);
+  }
 
-//   updatePriority(text, newPriority) {
-//     const note = this.items.find((el, idx, arr) => {
-//       return el.text === text;
-//     });
+  updatePriority(text, newPriority) {
+    const note = this.items.find((el, idx, arr) => {
+      return el.text === text;
+    });
 
-//     note.priority = newPriority;
-//   }
-// }
+    note.priority = newPriority;
+  }
+}
 
-// const myNotes = new Notes([]);
+const myNotes = new Notes([]);
 
-// myNotes.addNote({ text: 'Моя перша нотатка', priority: Notes.Priority.LOW });
-// console.log(myNotes);
+myNotes.addNote({ text: 'Моя перша нотатка', priority: Notes.Priority.LOW });
+console.log(myNotes);
 
-// myNotes.addNote({
-//   text: 'Моя друга нотатка',
-//   priority: Notes.Priority.NORMAL,
-// });
-// console.log(myNotes);
+myNotes.addNote({
+  text: 'Моя друга нотатка',
+  priority: Notes.Priority.NORMAL,
+});
+console.log(myNotes);
 
-// myNotes.removeNote('Моя перша нотатка');
-// console.log(myNotes);
+myNotes.removeNote('Моя перша нотатка');
+console.log(myNotes);
 
-// myNotes.updatePriority('Моя друга нотатка', Notes.Priority.HIGH);
-// console.log(myNotes);
+myNotes.updatePriority('Моя друга нотатка', Notes.Priority.HIGH);
+console.log(myNotes);
 
 /*
 ? Напишіть клас Toggle, який приймає об'єкт налаштувань {isOpen: boolean}
@@ -213,32 +213,32 @@
 ? За замовчуванням значення властивості on має бути false.
 */
 
-class Toggle {
-  constructor(settings = {}) {
-    const { isOpen = false } = settings;
+// class Toggle {
+//   constructor(settings = {}) {
+//     const { isOpen = false } = settings;
 
-    this.on = isOpen;
-  }
+//     this.on = isOpen;
+//   }
 
-  toggle() {
-    this.on = !this.on;
-  }
-}
+//   toggle() {
+//     this.on = !this.on;
+//   }
+// }
 
-const firstToggle = new Toggle({ isOpen: true });
+// const firstToggle = new Toggle({ isOpen: true });
 
-console.group('firstToggle');
-console.log(firstToggle.on);
-firstToggle.toggle();
-console.log(firstToggle.on);
-firstToggle.toggle();
-console.log(firstToggle.on);
-console.groupEnd('firstToggle');
+// console.group('firstToggle');
+// console.log(firstToggle.on);
+// firstToggle.toggle();
+// console.log(firstToggle.on);
+// firstToggle.toggle();
+// console.log(firstToggle.on);
+// console.groupEnd('firstToggle');
 
-const secondToggle = new Toggle();
+// const secondToggle = new Toggle();
 
-console.group('secondToggle');
-console.log(secondToggle.on);
-secondToggle.toggle();
-console.log(secondToggle.on);
-console.groupEnd('secondToggle');
+// console.group('secondToggle');
+// console.log(secondToggle.on);
+// secondToggle.toggle();
+// console.log(secondToggle.on);
+// console.groupEnd('secondToggle');
