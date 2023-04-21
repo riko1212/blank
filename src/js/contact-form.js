@@ -3,6 +3,7 @@ import localstorageService from './localstorage';
 const contactFormEl = document.querySelector('.js-contact-form');
 const userData = {};
 
+// Заповнення форми при заході на сторінку
 const fillContactFormFields = () => {
   const contactFormDataFromLS = localstorageService.load('userData');
 
@@ -18,6 +19,7 @@ const fillContactFormFields = () => {
 
 fillContactFormFields();
 
+// Зчитування і заповнення локал
 const onFormFieldChange = event => {
   const { target } = event;
 
@@ -28,6 +30,8 @@ const onFormFieldChange = event => {
 
   localstorageService.save('userData', userData);
 };
+
+// Обробка сабміту і очищення сховища
 
 const onContactFormSubmit = event => {
   event.preventDefault();

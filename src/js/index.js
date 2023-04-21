@@ -23,6 +23,14 @@
 // }
 // console.log("❌ You won't see this log");
 
+// localStorage.setItem('key', 'value');
+
+// localStorage.getItem('key');
+
+// localStorage.removeItem('key');
+
+// localStorage.clear();
+
 // const user = {
 //   fistName: 'Bertie',
 //   lastName: 'Sherman',
