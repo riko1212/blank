@@ -14,7 +14,11 @@ const timer = {
       }
 
       const { days, hours, minutes, seconds } = this.getTimeComponents(diff);
+      // let { days, hours, minutes, seconds } = this.getTimeComponents(diff);
 
+      // if (seconds < 10) {
+      //   seconds = '0' + seconds;
+      // }
       this.rootSelector.querySelector('.js-timer__days').textContent =
         this.pad(days);
       this.rootSelector.querySelector('.js-timer__hours').textContent =
@@ -68,5 +72,9 @@ const timer = {
     ];
   },
 };
+
+const str = '2';
+
+console.log(str.padStart(2, '0'));
 
 timer.start();

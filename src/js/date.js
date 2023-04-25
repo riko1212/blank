@@ -48,16 +48,21 @@
 
 //? TASK 04
 // Створіть функцію getSecondsToTomorrow(), яка повертає кількість секунд до завтрашнього дня.
-// const getSecondsToTomorrow = () => {
-//   const now = new Date();
-//   const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+const getSecondsToTomorrow = () => {
+  const now = new Date();
+  const tomorrow = new Date(
+    now.getFullYear(),
+    now.getMonth(),
+    now.getDate() + 1
+  );
 
-//   console.log(now);
-//   console.log(tomorrow);
+  console.log(now);
+  console.log(tomorrow);
 
-//   const diff = tomorrow - now;
+  // const diff = tomorrow.getTime() - now.getTime();
+  const diff = tomorrow - now;
 
-//   return diff / 1000;
-// };
+  return diff / 1000;
+};
 
-// console.log(getSecondsToTomorrow());
+console.log(getSecondsToTomorrow());
