@@ -15,16 +15,26 @@
 
 // console.log(promise);
 
-// // promise.then(
-// //   data => {
-// //     console.log(promise);
-// //     console.log(data);
-// //   },
-// //   err => {
-// //     console.log(promise);
-// //     console.log(err);
-// //   }
-// // );
+// promise.then(
+//   data => {
+//     console.log(promise);
+//     console.log(data);
+//   },
+//   err => {
+//     console.log(promise);
+//     console.log(err);
+//   }
+// );
+
+// promise
+//   .then((data) => {
+//     console.log(promise);
+//     console.log(data);
+//   })
+//   .catch((err) => {
+//     console.log(promise);
+//     console.log(err);
+//   });
 
 // promise
 //   .then(data => {
