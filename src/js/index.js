@@ -6,6 +6,11 @@
 //   console.log('SetTimeout');
 // }, 0);
 
+// // const promise = new Promise((resolve, reject) => {
+// //   console.log('In constructor Promise');
+// //   resolve('in then');
+// // });
+
 // const promise = new Promise((resolve, reject) => {
 //   console.log('In constructor Promise');
 
