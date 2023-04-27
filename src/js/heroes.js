@@ -1,5 +1,10 @@
 import heroesDb from '../json/heroes.json';
 import createHeroesCard from '../templates/heroes.hbs';
+// import Handlebars from 'handlebars';
+
+// const template = Handlebars.compile('<p>Name: {{name}}</p>');
+
+// console.log(template({name: 'Andrii'}));
 
 const heroesListEl = document.querySelector('.js-heroes-list');
 
