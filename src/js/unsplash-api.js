@@ -1,4 +1,5 @@
 'use strict';
+import axios from 'axios';
 
 export class UnsplashApi {
   #BASE_URL = 'https://api.unsplash.com';
@@ -10,20 +11,24 @@ export class UnsplashApi {
   }
 
   fetchPhotosByQuery() {
-    const searchParams = new URLSearchParams({
+    const searchParams = {
       query: this.searchQuery,
       page: this.page,
       per_page: 12,
       orientation: 'portrait',
       client_id: this.#API_KEY,
-    });
+    };
 
-    return fetch(`${this.#BASE_URL}/search/photos?${searchParams}`).then(response => {
-      if (!response.ok) {
-        throw new Error(response.status);
-      }
+    return axios.get(`${this.#BASE_URL}/search/photos`, { params: searchParams });
+  }
 
-      return response.json();
-    });
+  fetchRandomPhotos() {
+    const searchParams = {
+      orientation: 'portrait',
+      count: 12,
+      client_id: this.#API_KEY,
+    };
+
+    return axios.get(`${this.#BASE_URL}/photos/random`, { params: searchParams });
   }
 }

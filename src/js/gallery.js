@@ -8,12 +8,29 @@ const loadMoreBtnEl = document.querySelector('.js-load-more');
 
 const unsplashApi = new UnsplashApi();
 
+const paintRandomPhotosByPageLoad = () => {
+  unsplashApi
+    .fetchRandomPhotos()
+    .then(response => {
+      const { data } = response;
+
+      galleryListEl.innerHTML = createGalleryCards(data);
+    })
+    .catch(err => {
+      console.log(err);
+    });
+};
+
+paintRandomPhotosByPageLoad();
+
 const onLoadMoreBtnElClick = event => {
   unsplashApi.page += 1;
 
   unsplashApi
     .fetchPhotosByQuery()
-    .then(data => {
+    .then(response => {
+      const { data } = response;
+
       galleryListEl.insertAdjacentHTML('beforeend', createGalleryCards(data.results));
 
       if (data.total_pages === unsplashApi.page) {
@@ -34,7 +51,10 @@ const onSearchFormElSubmit = event => {
 
   unsplashApi
     .fetchPhotosByQuery()
-    .then(data => {
+    .then(response => {
+      console.log(response);
+      const { data } = response;
+
       if (data.total_pages === 0) {
         return;
       }
