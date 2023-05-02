@@ -23,8 +23,8 @@ const updateUserInfo = (userId, userInfo) => {
 };
 
 updateUserInfo(12, {
-  name: 'Oleksii Repin',
-  username: 'oleksii',
+  name: 'Andrii Danylko',
+  username: 'riko',
   email: 'test@gmail.com',
   address: {
     street: 'Victor Plains',
