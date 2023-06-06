@@ -97,4 +97,4 @@
 
 // console.log(someStr);
 
-// const userFullName = someStr.slice();
+// const userFullName = someStr.slice()

@@ -110,6 +110,8 @@
 // const num = Number(prompt('Введіть якесь число'));
 // const pow = Number(prompt('Введіть ступінь'));
 
+// const result = Math.pow(num, pow);
+
 // const result = num ** pow;
 
 // console.log(result);
@@ -127,39 +129,45 @@
 // const min = Number(prompt('Введіть мінімальне число діапазону'));
 // const max = Number(prompt('Введіть максимальне число діапазону'));
 
+// const randomNum = Math.round(min +  Math.random() * (max - min));
+
+// 1 - 1...1.49999
+// 2 - 1.5...2.49999
+// 3 - 2.5...2.999999
+
 // const randomNum = Math.round(min - 0.5 + Math.random() * (max - min + 1));
 
 // console.log(randomNum);
 
-// const generateRandomNumbure = (min, max) => {
-//   return Math.round(min - 0.5 + Math.random() * (max - min + 1));
-// };
+const generateRandomNumbure = (min, max) => {
+  return Math.round(min + Math.random() * (max - min));
+};
 
-// let count1 = 0;
-// let count2 = 0;
-// let count3 = 0;
+let count1 = 0;
+let count2 = 0;
+let count3 = 0;
 
-// for (let i = 0; i < 100; i += 1) {
-//   const randomNumber = generateRandomNumbure(1, 3);
+for (let i = 0; i < 100; i += 1) {
+  const randomNumber = generateRandomNumbure(1, 3);
 
-//   switch (randomNumber) {
-//     case 1: {
-//       count1 += 1;
-//       break;
-//     }
+  switch (randomNumber) {
+    case 1: {
+      count1 += 1;
+      break;
+    }
 
-//     case 2: {
-//       count2 += 1;
-//       break;
-//     }
+    case 2: {
+      count2 += 1;
+      break;
+    }
 
-//     case 3: {
-//       count3 += 1;
-//       break;
-//     }
-//   }
-// }
+    case 3: {
+      count3 += 1;
+      break;
+    }
+  }
+}
 
-// console.log(`1: ${count1}`);
-// console.log(`2: ${count2}`);
-// console.log(`3: ${count3}`);
+console.log(`1: ${count1}`);
+console.log(`2: ${count2}`);
+console.log(`3: ${count3}`);
