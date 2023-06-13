@@ -78,7 +78,7 @@
 //? Напишіть функцію sum, яка складає довільну кількість аргументів
 // const sum = function (...args) {
 //   console.log(args);
-
+//// const args = Array.from(arguments)
 //   let total = 0;
 
 //   for (const number of args) {
