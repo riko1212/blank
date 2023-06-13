@@ -49,18 +49,19 @@
 
 // console.log(total);
 
+console.log(typeof null);
 // 3 Варіант Object.values() + for...of
-const salaries = {
-  John: 100,
-  Ann: 160,
-  Pete: 130,
-};
+// const salaries = {
+//   John: 100,
+//   Ann: 160,
+//   Pete: 130,
+// };
 
-const salariesValues = Object.values(salaries);
-let total = 0;
+// const salariesValues = Object.values(salaries);
+// let total = 0;
 
-for (const salary of salariesValues) {
-  total += salary;
-}
+// for (const salary of salariesValues) {
+//   total += salary;
+// }
 
-console.log(total);
+// console.log(total);
