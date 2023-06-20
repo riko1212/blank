@@ -43,6 +43,14 @@ class User {
   //   return typeof name === 'string';
   // }
 
+  // getLogin() {
+  //   return this.#userLogin;
+  // }
+
+  // setLogin(newLogin) {
+  //   this.#userLogin = newLogin;
+  // }
+
   get login() {
     return this.#userLogin;
   }
