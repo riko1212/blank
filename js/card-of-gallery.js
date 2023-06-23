@@ -26,4 +26,9 @@ galleryImgEl.alt = 'Labrador';
 galleryLinkEl.append(galleryImgEl);
 
 // Вставка елементів
+
+// galleryLinkEl.append(galleryItemEl);
+// document.querySelector('.allery-item').append(galleryLinkEl);
+// document.querySelector('.allery-item a').append(galleryImgEl);
+
 galleryListEl.append(galleryItemEl);
