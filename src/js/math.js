@@ -16,4 +16,16 @@ export const multi = (a, b) => {
   return a * b;
 };
 
-export default 10;
+// export const math = {
+//   add,
+//   sub,
+//   division
+// }
+
+export default {
+  add,
+  sub,
+  division,
+};
+
+// export default 10;

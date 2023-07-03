@@ -1,4 +1,5 @@
-// import num, { add } from './math';
+import num, { add } from './math';
+console.log(num);
 
 // const user = {
 //   firstName: 'Hilda',
